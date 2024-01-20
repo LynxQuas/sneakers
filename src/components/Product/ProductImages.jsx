@@ -36,11 +36,14 @@ const ProductImage = ({ productImages, className, fromModel }) => {
         <div className={className}>
             <img
                 src={productImages[currentImageIndex]}
-                className="hidden md:block"
+                className="hidden md:block rounded-xl cursor-pointer"
                 onClick={viewFullImageHandler}
             />
 
-            <img src={productImages[currentImageIndex]} className="md:hidden" />
+            <img
+                src={productImages[currentImageIndex]}
+                className="md:hidden "
+            />
             <ProductThumbnails
                 productImages={productImages}
                 currentImageIndex={currentImageIndex}

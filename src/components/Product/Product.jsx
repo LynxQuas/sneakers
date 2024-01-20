@@ -10,7 +10,7 @@ const Product = () => {
             {products.map((product) => (
                 <div
                     key={product.id}
-                    className="mb-4 border-b-2 border-black md:flex md:gap-10 justify-center"
+                    className="mb-4 md:flex md:gap-10 justify-center"
                 >
                     <ProductImage
                         productImages={product.productImage}

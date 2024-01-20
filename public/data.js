@@ -19,17 +19,6 @@ const products = [
             productImage4,
         ],
     },
-
-    {
-        id: "002",
-        company: "sneaker company",
-        title: "Fall Limited Edition Sneakers",
-        description:
-            "These low-profile snakers are your perfect casual wear companion.Featuring a durable rubber outer sole, the'll withstand everything the weathe can offer.",
-        discount: 50,
-        price: 250,
-        productImage: [productImage1, productImage2, productImage3],
-    },
 ];
 
 export default products;

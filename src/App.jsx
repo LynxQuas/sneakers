@@ -1,21 +1,24 @@
 import Product from "./components/Product/Product";
-import Navbar from "./components/navbar/Navbar";
-import CartContextProvider from "./store/CartContext";
-import ProductContextProvider from "./store/ProductContext";
+
+import AppLayout from "./pages/AppLayout";
+
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const App = () => {
-    return (
-        <CartContextProvider>
-            <ProductContextProvider>
-                <header>
-                    <Navbar />
-                </header>
-                <main>
-                    <Product />
-                </main>
-            </ProductContextProvider>
-        </CartContextProvider>
-    );
+    const router = createBrowserRouter([
+        {
+            element: <AppLayout />,
+            children: [
+                { index: true, element: <Product /> },
+                { path: "/men", element: <h1>Men</h1> },
+                { path: "/women", element: <h1>Women</h1> },
+                { path: "/about", element: <h1>About</h1> },
+                { path: "/contact", element: <h1>Contact</h1> },
+            ],
+        },
+    ]);
+
+    return <RouterProvider router={router} />;
 };
 
 export default App;

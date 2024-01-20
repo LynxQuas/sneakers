@@ -5,6 +5,7 @@ import Menu from "./Menu";
 import CartIcon from "./CartIcon";
 import Avatar from "./Avatar";
 import MenuItems from "./MenuItems";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="flex justify-around items-center py-6 relative md:p-8 md:border-b-2 border-gray-200 md:mb-10">
+        <nav className="flex justify-around items-center py-8 relative md:mb-6 md:py-8 md:border-b-2 border-gray-200">
             <NavContentContainer className="flex items-center gap-10">
                 <img
                     src={menuIcon}
@@ -27,7 +28,9 @@ const Navbar = () => {
                     height="25"
                     onClick={() => setIsMenuOpen(true)}
                 />
-                <span className="text-4xl font-bold">sneakers</span>
+                <span className="text-4xl font-bold">
+                    <Link to="/">sneakers</Link>
+                </span>
                 <MenuItems className="md:flex gap-5 text-stone-500 hidden" />
             </NavContentContainer>
 
