@@ -10,7 +10,7 @@ const PreviousButton = ({ onPreviousClick, fromModel }) => {
                     : "md:hidden top-[50%] left-[5%]"
             }`}
         >
-            <img src={previous} />
+            <img src={previous} alt="previous button" />
         </div>
     );
 };

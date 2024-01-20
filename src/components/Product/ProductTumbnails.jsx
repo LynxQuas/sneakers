@@ -17,6 +17,7 @@ const ProductThumbnails = ({
                     />
                     <img
                         src={image}
+                        alt="product"
                         className="w-24 rounded-md cursor-pointer hover:brightness-50 "
                         onClick={() => setCurrentImageIndex(index)}
                     />

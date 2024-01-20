@@ -39,13 +39,13 @@ const AddProduct = ({ product }) => {
         <div className="w-full md:flex gap-10">
             <div className="w-full md:w-2/3 items-center flex justify-around py-4 bg-slate-100 mb-4 md:mb-0 rounded-lg">
                 <div onClick={handleMinusAmout} className="cursor-pointer">
-                    <img src={minus} />
+                    <img src={minus} alt="minus button" />
                 </div>
                 <span className="text-xl font-bold" ref={productAmount}>
                     {amount}
                 </span>
                 <div onClick={handlePlusAmount} className="cursor-pointer">
-                    <img src={plus} />
+                    <img src={plus} alt="plus button" />
                 </div>
             </div>
 

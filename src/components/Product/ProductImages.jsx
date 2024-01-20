@@ -37,6 +37,7 @@ const ProductImage = ({ productImages, className, fromModel }) => {
             <img
                 src={productImages[currentImageIndex]}
                 className="hidden md:block rounded-xl cursor-pointer"
+                alt="product 1"
                 onClick={viewFullImageHandler}
             />
 

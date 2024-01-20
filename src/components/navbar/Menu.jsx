@@ -9,7 +9,7 @@ const Menu = ({ onCloseMenu }) => {
             <div className="bg-white w-[80%] h-screen z-50 fixed top-0 left-0 flex flex-col gap-8 px-10 py-5 animate-slideIn">
                 <img
                     src={closeMenu}
-                    alt=""
+                    alt="menu icon"
                     width="20"
                     height="20"
                     onClick={onCloseMenu}

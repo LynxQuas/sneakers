@@ -29,6 +29,7 @@ const CartIcon = () => {
                     width="30"
                     id="cartIcon"
                     height="30"
+                    alt="cart icon"
                     onClick={() => setOpenCart((prev) => !prev)}
                 />
                 {cart.length > 0 && (

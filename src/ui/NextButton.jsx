@@ -10,7 +10,7 @@ const NextButton = ({ onNextClick, fromModel }) => {
                     : "md:hidden top-[50%] right-[5%]"
             }`}
         >
-            <img src={next} />
+            <img src={next} alt="next button" />
         </div>
     );
 };
